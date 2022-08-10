@@ -1,0 +1,19 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(110, 221, 238);
+}
+body h1{
+    text-align: center;
+}
+#tudo{
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px 0 5px 0 ;
+    padding: 50px;
+}
