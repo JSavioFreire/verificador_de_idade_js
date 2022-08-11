@@ -15,20 +15,46 @@ function clicou(){
     var resultado = document.querySelector('#resultado')
   
     var idadeAno = anonow - ano
-    var corrigindoIdadeAno = idadeAno - 1
+
     if(mes < mesnow || mes == mesnow && dia <= dianow){//Nesse caso, o niver ja passou ou é hoje. 
         resultado.innerHTML = `<p>A idade é <strong>${idadeAno}</strong></p>`
     }else{
         resultado.innerHTML = `<p>A idade é <strong>${idadeAno - 1}</strong></p>`
     }
-    if(idadeAno < 2){
-        foto.img
-    }
+    
+    var foto = document.querySelector('#foto')
+    var sexo = document.getElementsByName('radsex') //queryselectorall para selecionar todos os radsex
+
+    if(sexo[0].checked){        //sexo[0] é o primeiro marcador
+
+        if(idadeAno <= 2){
+            foto.src = "fotos/2.jpg"
+        }else if(idadeAno <= 6){
+            foto.src = "fotos/5menino.jpg"
+        }else if(idadeAno <= 12){
+            foto.src = "fotos/12menino.jpg"
+        }else if(idadeAno <= 25){
+            foto.src = "fotos/18menino.jpg"
+        }else if(idadeAno <= 50){
+            foto.src = "fotos/30homem.jpg"
+        }else if(idadeAno > 50){    
+            foto.src = "fotos/60homem.jpg"
+
+        }}else{       //sexo[1]
+
+        if(idadeAno <= 2){
+            foto.src = "fotos/2.jpg"
+        }else if(idadeAno <= 6){
+            foto.src = "fotos/5menina.jpg"
+        }else if(idadeAno <= 12){
+            foto.src = "fotos/12menina.jpg"
+        }else if(idadeAno <= 25){
+            foto.src = "fotos/18menina.jpg"
+        }else if(idadeAno <= 50){
+            foto.src = "fotos/30mulher.jpg"
+        }else if(idadeAno > 50){
+            foto.src = "fotos/60mulher.jpg"
+        }
+
 }
-
-
-
-
-
-
-
+}

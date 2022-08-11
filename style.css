@@ -7,7 +7,7 @@ body{
 }
 #tudo{
     background-color: white;
-    width: 700px;
+    max-width: 700px;
     height: 500px;
     margin: auto;
     border: 2px solid black;
@@ -19,4 +19,13 @@ body{
 }
 #perguntas{
     margin-left: 50px;
+}
+#tudo #img{
+    text-align: center;
+}
+#foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
 }
