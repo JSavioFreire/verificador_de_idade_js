@@ -10,16 +10,19 @@
 <body>
     <section id="tudo">
         <h1>Verifique a idade de uma pessoa colocando a data de nascimento.</h1>
-        <p id="nasc">Coloque aqui a data de nascimento:
-            <input type="date" name="dia" id="dia">
-        </p>
-            <p id="sexo">Sexo:
-            <input type="radio" name="radsex" id="masc" checked> <!--Para so poder marcar um input por vez, o name deles tem q ser o mesmo.-->
-            <label for="masc">Masculino</label>
-            <input type="radio" name="radsex" id="fem">
-            <label for="fem">Feminino</label>
+        <div id="perguntas">
+            <p id="nasc">Coloque aqui a data de nascimento:
+                <input type="date" name="dia" id="dia">
             </p>
-            <input type="button" value="Verificar" id="bt">
+                <p id="sexo">Sexo:
+                <input type="radio" name="radsex" id="masc" checked> <!--Para so poder marcar um input por vez, o name deles tem q ser o mesmo.-->
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                </p>
+                <input type="button" value="Verificar" id="bt">
+                <div id="resultado"></div>
+        </div>
         
     </section>
     <footer><p>Site criado por Sávio Freire.</p></footer>
