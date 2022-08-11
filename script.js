@@ -21,8 +21,12 @@ function clicou(){
     }else{
         resultado.innerHTML = `<p>A idade é <strong>${idadeAno - 1}</strong></p>`
     }
-
+    if(idadeAno < 2){
+        foto.img
+    }
 }
+
+
 
 
 
